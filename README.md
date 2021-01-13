@@ -1,1 +1,1 @@
-# scotty_noteful
+# This is the Noteful App
