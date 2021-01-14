@@ -2,6 +2,7 @@ import React from 'react';
 import config from './config';
 import './App/App.css';
 import ApiContext from './ApiContext';
+import PropTypes from 'prop-types';
 
 class AddFolder extends React.Component{
   static contextType = ApiContext;
@@ -57,6 +58,10 @@ class AddFolder extends React.Component{
     </section>
     );
   }
+}
+
+AddFolder.PropTypes = {
+  className:PropTypes.string.isRequired
 }
 
 export default AddFolder;

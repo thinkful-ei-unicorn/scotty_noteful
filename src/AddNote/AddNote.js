@@ -1,6 +1,7 @@
 import React from 'react';
 import ApiContext from '../ApiContext';
 import config from '../config';
+import PropTypes from 'prop-types';
 
 class AddNote extends React.Component {
 	static contextType = ApiContext;
@@ -79,6 +80,10 @@ class AddNote extends React.Component {
 			</form>
 			)
 	}
+}
+
+AddNote.PropTypes = {
+  className:PropTypes.string.isRequired
 }
 
 export default AddNote;
